@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | The Batman</title>
+    <link rel="icon" href="img/Icono.webp" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/galeria/BatmanLogo2.webp" alt="Batman Logo">
+                THE BATMAN
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="nav-dropdown">
+                <a href="sobre.html">La Película</a>
+                <ul class="dropdown-menu">
+                    <li><a href="sobre.html#sinopsis">Sinopsis</a></li>
+                    <li><a href="sobre.html#personajes">Personajes</a></li>
+                    <li><a href="sobre.html#detras">Detrás de Cámara</a></li>
+                    <li><a href="sobre.html#reparto">Reparto Completo</a></li>
+                </ul>
+            </li>
+                <li><a href="historia.html">Gotham City</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="riddler.html">The Riddler</a></li>
+                <li><a href="premios.html">Premios</a></li>
+                <li><a href="contacto.html" class="nav-active">Contacto</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+
+        <!-- IZQUIERDA: imagen -->
+        <div class="batsignal-side">
+            <img src="img/galeria/Batisenal.webp" alt="La batisenal activada en el cielo de Gotham">
+        </div>
+
+        <!-- DERECHA: formulario -->
+        <div class="form-side">
+            <div class="gordon-form-wrap animate-fade-up">
+
+                <div class="gordon-form-header">
+                    <span class="gordon-eyebrow">Comisionado Gordon — Canal Seguro</span>
+                    <h1 class="gordon-form-title">Activar<br>la Señal</h1>
+                    <p class="gordon-form-sub">"Si necesitás a Batman, solo encendé la señal. Él verá. Él vendrá." — James Gordon</p>
+                </div>
+
+                <div class="signal-sent" id="signalSent">
+                    <p class="signal-sent-title">Signal Activated</p>
+                    <p class="signal-sent-sub">
+                        Gordon encendió la señal.<br>
+                        Batman está en camino.
+                    </p>
+                </div>
+
+                <form class="gordon-form" id="gordonForm" novalidate>
+                    <div class="input-group">
+                        <label for="name">Nombre / Identificación</label>
+                        <input type="text" id="name" name="name" required placeholder="Comisionado Gordon..." autocomplete="off">
+                        <span class="field-error-msg" id="nameError">— Ingresá tu nombre</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Canal de Comunicación (Email)</label>
+                        <input type="email" id="email" name="email" required placeholder="gordon@gcpd.gov" autocomplete="off">
+                        <span class="field-error-msg" id="emailError">— Email inválido</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="urgency">Nivel de Urgencia</label>
+                        <select id="urgency" name="urgency">
+                            <option value="general">Consulta General</option>
+                            <option value="colaboracion">Colaboración / Proyecto</option>
+                            <option value="urgente">Urgente — Amenaza Activa</option>
+                            <option value="riddler">He encontrado un acertijo</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Mensaje para Batman <span id="charCounter" class="char-counter">0 / 500</span></label>
+                        <textarea id="message" name="message" rows="5" required placeholder="El Acertijo ha atacado de nuevo. Necesito tu ayuda..." maxlength="500"></textarea>
+                        <span class="field-error-msg" id="messageError">— Escribí tu mensaje</span>
+                    </div>
+                    <button type="submit" class="gordon-submit">
+                        <span>— Encender la Señal —</span>
+                    </button>
+                </form>
+
+                <p class="form-disclaimer">
+                    Canal cifrado GCPD. Solo Bruce Wayne puede leer este mensaje.
+                </p>
+
+            </div>
+        </div>
+
+    </main>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <footer class="hollywood-footer">
+        <div class="footer-inner">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/TheBatman" target="_blank">FACEBOOK</a>
+                <a href="https://www.instagram.com/thebatman" target="_blank">INSTAGRAM</a>
+                <a href="https://twitter.com/TheBatman" target="_blank">X (TWITTER)</a>
+                <a href="https://www.youtube.com/WarnerBrosPictures" target="_blank">YOUTUBE</a>
+            </div>
+            <div class="footer-copyright-block">
+                <p class="main-copy">© 2026 WARNER BROS. ENTERTAINMENT INC. ALL RIGHTS RESERVED.</p>
+                <p class="disclaimer">PROYECTO EDUCATIVO DE PORTAFOLIO. NO AFILIADO CON WARNER BROS. NI DC STUDIOS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

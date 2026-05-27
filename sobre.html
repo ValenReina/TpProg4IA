@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Película | The Batman</title>
+    <link rel="icon" href="img/Icono.webp" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="img/galeria/BatmanLogo2.webp" alt="Batman Logo">THE BATMAN</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="nav-dropdown">
+                <a href="sobre.html" class="nav-active">La Película</a>
+                <ul class="dropdown-menu">
+                    <li><a href="sobre.html#sinopsis">Sinopsis</a></li>
+                    <li><a href="sobre.html#personajes">Personajes</a></li>
+                    <li><a href="sobre.html#detras">Detrás de Cámara</a></li>
+                    <li><a href="sobre.html#reparto">Reparto Completo</a></li>
+                </ul>
+            </li>
+                <li><a href="historia.html">Gotham City</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="riddler.html">The Riddler</a></li>
+                <li><a href="premios.html">Premios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO DE PÁGINA -->
+        <section class="sobre-hero">
+            <img class="sobre-hero-img" src="img/BruceWayne.jpg" alt="Bruce Wayne"
+                 onerror="this.src='https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1400&auto=format&fit=crop';">
+            <div class="sobre-hero-bg"></div>
+            <div class="sobre-hero-content animate-fade-up">
+                <span class="sobre-eyebrow">Matt Reeves · 2022</span>
+                <h1 class="sobre-title">Detrás<br>de la Máscara</h1>
+                <p class="sobre-tagline">La historia de un hombre que eligió el dolor de los demás como razón de existir — y tuvo que aprender la diferencia entre venganza y justicia.</p>
+            </div>
+        </section>
+
+        <!-- SINOPSIS -->
+        <section class="synopsis-wrapper" id="sinopsis">
+            <div class="synopsis-text animate-fade-up">
+                <div class="synopsis-quote">
+                    "Un film negro que se atreve a mirar dentro del mito y encontrar a un hombre destrozado buscando su propósito."
+                </div>
+                <p class="synopsis-p">
+                    Dirigida y co-escrita por <strong>Matt Reeves</strong>, <em>The Batman</em> sitúa la acción en el segundo año del vigilante de Gotham. No es un origen ni una saga épica: es un thriller criminal en el que Bruce Wayne actúa como detective antes que como guerrero, desentrañando una conspiración que hunde sus raíces en la historia de su propia familia.
+                </p>
+                <p class="synopsis-p">
+                    Con una estética influenciada por <em>Chinatown</em>, <em>Se7en</em> y <em>Taxi Driver</em>, la película reimagina a Gotham como una ciudad enferma de corrupción sistémica. La violencia del Batman no siempre es la respuesta — y el símbolo del miedo puede convertirse, finalmente, en símbolo de esperanza.
+                </p>
+                <p class="synopsis-p">
+                    El corazón de la película no es una batalla de puños ni una carrera de autos: es la pregunta que Bruce Wayne nunca pudo contestar. <strong>¿Quién era realmente Thomas Wayne? ¿Y qué significa ser su hijo?</strong>
+                </p>
+            </div>
+
+            <div class="synopsis-image-wrap animate-fade-up">
+                <div class="synopsis-image-frame">
+                    <img src="img/galeria/MattReeves.webp" alt="Matt Reeves director de The Batman(2022)"
+                         onerror="this.src='https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=600&auto=format&fit=crop';">
+                    <p class="synopsis-image-caption">Matt Reeves</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAJES -->
+        <section class="chars-section" id="personajes">
+            <div class="chars-header animate-fade-up">
+                <span class="chars-eyebrow">El elenco</span>
+                <h2 class="characters-title">Personajes Principales</h2>
+            </div>
+
+            <div class="characters-grid" id="reparto">
+                <article class="character-card animate-fade-up">
+                    <div class="char-img-wrapper">
+                        <img src="img/galeria/robertpattinson.webp" alt="Robert Pattinson"
+                             onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300';">
+                    </div>
+                    <div class="char-content">
+                        <h3 class="char-name">Bruce Wayne / Batman</h3>
+                        <p class="char-actor">Interpretado por Robert Pattinson</p>
+                        <p class="char-bio">Heredero de la fortuna Wayne que lleva dos años operando en las sombras. Usa el miedo como arma — hasta que debe elegir si ser símbolo de terror o de esperanza.</p>
+                    </div>
+                </article>
+
+                <article class="character-card animate-fade-up">
+                    <div class="char-img-wrapper">
+                        <img src="img/galeria/zoekravitz.webp" alt="Zoë Kravitz"
+                             onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300';">
+                    </div>
+                    <div class="char-content">
+                        <h3 class="char-name">Selina Kyle / Catwoman</h3>
+                        <p class="char-actor">Interpretada por Zoë Kravitz</p>
+                        <p class="char-bio">Ladrona con motivaciones propias: encontrar a su amiga desaparecida. Su relación con Batman es el corazón emocional del film.</p>
+                    </div>
+                </article>
+
+                <article class="character-card animate-fade-up">
+                    <div class="char-img-wrapper">
+                        <img src="img/galeria/pauldano.webp" alt="Paul Dano"
+                             onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300';">
+                    </div>
+                    <div class="char-content">
+                        <h3 class="char-name">Edward Nashton / The Riddler</h3>
+                        <p class="char-actor">Interpretado por Paul Dano</p>
+                        <p class="char-bio">Contador forense criado en orfanatos de Gotham. Canalizó décadas de resentimiento en un plan para exponer la hipocresía de la élite.</p>
+                    </div>
+                </article>
+
+                <article class="character-card animate-fade-up">
+                    <div class="char-img-wrapper">
+                        <img src="img/galeria/colinfarrell.webp" alt="Colin Farrell"
+                             onerror="this.src='https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=300';">
+                    </div>
+                    <div class="char-content">
+                        <h3 class="char-name">Oswald Cobblepot / The Penguin</h3>
+                        <p class="char-actor">Interpretado por Colin Farrell</p>
+                        <p class="char-bio">Teniente de Falcone, irreconocible bajo una transformación física extraordinaria. Escala el poder a base de violencia y oportunismo.</p>
+                    </div>
+                </article>
+
+                <article class="character-card animate-fade-up">
+                    <div class="char-img-wrapper">
+                        <img src="img/galeria/johnturturro.webp" alt="John Turturro"
+                             onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300';">
+                    </div>
+                    <div class="char-content">
+                        <h3 class="char-name">Carmine Falcone</h3>
+                        <p class="char-actor">Interpretado por John Turturro</p>
+                        <p class="char-bio">El padrino de Gotham. Encarnación del poder corrupto que ha mantenido a la ciudad bajo su control por décadas, con vínculos que llegan hasta los Wayne.</p>
+                    </div>
+                </article>
+
+                <article class="character-card animate-fade-up">
+                    <div class="char-img-wrapper">
+                        <img src="img/galeria/jeffreywright.webp" alt="Jeffrey Wright"
+                             onerror="this.src='https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=300';">
+                    </div>
+                    <div class="char-content">
+                        <h3 class="char-name">James Gordon</h3>
+                        <p class="char-actor">Interpretado por Jeffrey Wright</p>
+                        <p class="char-bio">El único policía honesto en un departamento corrompido. Aliado incómodo de Batman, unido por el mismo objetivo: sacar la verdad a la luz.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DETRÁS DE CÁMARA -->
+        <section class="behind-section" id="detras">
+            <div class="behind-header animate-fade-up">
+                <span class="behind-eyebrow">Artesanía cinematográfica</span>
+                <h2 class="behind-title">Detrás de Cámara</h2>
+            </div>
+
+            <div class="prod-list">
+                <article class="prod-item animate-fade-up">
+                    <div class="prod-num">01</div>
+                    <div class="prod-body">
+                        <h3 class="prod-title">Fotografía Noir — Greig Fraser</h3>
+                        <p class="prod-text">Fraser (Oscar por <em>Dune</em>) filmó con cámaras RED y lentes anamórficos vintage de los años 70. La paleta de color fue intencionalmente privada de luz ambiental: si algo es visible en pantalla, existe una razón dramática para que se vea. El resultado es una Gotham que parece sacada de una pesadilla en color.</p>
+                    </div>
+                    <div class="prod-icon-big">📷</div>
+                </article>
+
+                <article class="prod-item animate-fade-up">
+                    <div class="prod-num">02</div>
+                    <div class="prod-body">
+                        <h3 class="prod-title">Música — Michael Giacchino</h3>
+                        <p class="prod-text">Giacchino construyó el tema de Batman alrededor de una única célula musical de tres notas cargadas de angustia. El motivo del Acertijo es una distorsión mecánica de esa misma célula — el villano y el héroe están atados por la misma música rota, reforzando la idea de que son dos caras del mismo trauma.</p>
+                    </div>
+                    <div class="prod-icon-big">🎵</div>
+                </article>
+
+                <article class="prod-item animate-fade-up">
+                    <div class="prod-num">03</div>
+                    <div class="prod-body">
+                        <h3 class="prod-title">El Traje Artesanal — Jacqueline Durran</h3>
+                        <p class="prod-text">El traje fue diseñado para ser construido por el propio Bruce Wayne con materiales militares de descarte: piezas de armadura balística recicladas, hebillas industriales, cuero sin acabado. Cada componente tiene marcas de uso real. Es la armadura de alguien que lleva dos años siendo golpeado en callejones de Gotham.</p>
+                    </div>
+                    <div class="prod-icon-big">🦇</div>
+                </article>
+
+                <article class="prod-item animate-fade-up">
+                    <div class="prod-num">04</div>
+                    <div class="prod-body">
+                        <h3 class="prod-title">Diseño de Producción — James Chinlund</h3>
+                        <p class="prod-text">Chinlund construyó Gotham mezclando Nueva York, Chicago y Glasgow. La ciudad no es un decorado de fantasía: es una metrópolis real en estado de putrefacción. Cada exterior tiene tres capas de carteles, grafiti y basura acumulada. Wayne Manor fue diseñado deliberadamente como un lugar donde nadie ha limpiado en décadas.</p>
+                    </div>
+                    <div class="prod-icon-big">🏙️</div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <footer class="hollywood-footer">
+        <div class="footer-inner">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/TheBatman" target="_blank">FACEBOOK</a>
+                <a href="https://www.instagram.com/thebatman" target="_blank">INSTAGRAM</a>
+                <a href="https://twitter.com/TheBatman" target="_blank">X (TWITTER)</a>
+                <a href="https://www.youtube.com/WarnerBrosPictures" target="_blank">YOUTUBE</a>
+            </div>
+            <div class="footer-copyright-block">
+                <p class="main-copy">© 2026 WARNER BROS. ENTERTAINMENT INC. ALL RIGHTS RESERVED.</p>
+                <p class="disclaimer">PROYECTO EDUCATIVO DE PORTAFOLIO. NO AFILIADO CON WARNER BROS. NI DC STUDIOS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Batman | I Am Gotham</title>
+    <link rel="icon" href="img/Icono.webp" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <canvas id="rainCanvas"></canvas>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="img/galeria/BatmanLogo2.webp" alt="Batman Logo">THE BATMAN</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-active">Inicio</a></li>
+                <li class="nav-dropdown">
+                <a href="sobre.html">La Película</a>
+                <ul class="dropdown-menu">
+                    <li><a href="sobre.html#sinopsis">Sinopsis</a></li>
+                    <li><a href="sobre.html#personajes">Personajes</a></li>
+                    <li><a href="sobre.html#detras">Detrás de Cámara</a></li>
+                    <li><a href="sobre.html#reparto">Reparto Completo</a></li>
+                </ul>
+            </li>
+                <li><a href="historia.html">Gotham City</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="riddler.html">The Riddler</a></li>
+                <li><a href="premios.html">Premios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <video class="hero-video" autoplay loop muted playsinline>
+                <source src="img/Gotham.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-eyebrow animate-fade-up">MATT REEVES · WARNER BROS. · 2022</p>
+                <h1 class="animate-batman">THE BATMAN</h1>
+                <p class="hero-sub animate-fade-up">Year Two · Gotham City</p>
+                <div class="hero-rule animate-fade-up"></div>
+                <div class="hero-quote-container animate-fade-up">
+                    <blockquote class="cinematic-quote">
+                        "Gotham me necesita. Pero ¿qué soy yo<br>
+                        para esta ciudad? ¿Un símbolo? ¿Un monstruo?<br>
+                        Solo sé una cosa: <em>soy la venganza</em>."
+                    </blockquote>
+                    <p class="quote-author">— Bruce Wayne / Batman</p>
+                </div>
+                <div class="hero-buttons animate-fade-up">
+                    <a href="sobre.html" class="btn-primary">Descubrir Gotham</a>
+                    <a href="galeria.html" class="btn-secondary">Ver Galería</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATOS -->
+        <section class="film-facts">
+            <div class="facts-grid">
+                <div class="fact-item animate-fade-up">
+                    <span class="fact-num">$770M</span>
+                    <span class="fact-label">Recaudación global</span>
+                </div>
+                <div class="fact-item animate-fade-up">
+                    <span class="fact-num">176</span>
+                    <span class="fact-label">Minutos de duración</span>
+                </div>
+                <div class="fact-item animate-fade-up">
+                    <span class="fact-num">85%</span>
+                    <span class="fact-label">Rotten Tomatoes</span>
+                </div>
+                <div class="fact-item animate-fade-up">
+                    <span class="fact-num">87</span>
+                    <span class="fact-label">Metacritic Score</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="home-intro">
+            <div class="animate-fade-up">
+                <span class="intro-label">La historia</span>
+                <h2 class="intro-title">Una Ciudad.<br>Una Sombra.<br>Una Verdad.</h2>
+                <p class="intro-body">
+                    En el segundo año de Batman como vigilante de Gotham City, el miedo se ha convertido en su arma más poderosa. Pero cuando el Acertijo comienza a eliminar figuras de poder dejando pistas solo para él, Bruce Wayne debe desentrañar una conspiración de corrupción que amenaza con destruir todo lo que su familia construyó — y todo lo que él cree ser.
+                </p>
+                <a href="sobre.html" class="btn-secondary">Leer más sobre la película</a>
+            </div>
+            <div class="animate-fade-up">
+                <div class="intro-visual-box">
+                    <div class="intro-stat-row">
+                        <span class="intro-stat-icon">🎬</span>
+                        <div>
+                            <p class="intro-stat-title">Director</p>
+                            <p class="intro-stat-desc">Matt Reeves — conocido por <em>Cloverfield</em> y la trilogía de <em>El Planeta de los Simios</em>.</p>
+                        </div>
+                    </div>
+                    <div class="intro-stat-row">
+                        <span class="intro-stat-icon">📷</span>
+                        <div>
+                            <p class="intro-stat-title">Fotografía</p>
+                            <p class="intro-stat-desc">Greig Fraser · lentes anamórficos vintage · paleta noir casi sin luz natural.</p>
+                        </div>
+                    </div>
+                    <div class="intro-stat-row">
+                        <span class="intro-stat-icon">🎵</span>
+                        <div>
+                            <p class="intro-stat-title">Música</p>
+                            <p class="intro-stat-desc">Michael Giacchino · tema construido sobre una única célula de tres notas y angustia.</p>
+                        </div>
+                    </div>
+                    <div class="intro-stat-row">
+                        <span class="intro-stat-icon">📅</span>
+                        <div>
+                            <p class="intro-stat-title">Estreno</p>
+                            <p class="intro-stat-desc">4 de marzo de 2022 — segunda película de Batman más taquillera de la historia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CITA -->
+        <section class="full-quote-section">
+            <blockquote class="big-quote animate-fade-up">
+                "Dos años patrullo las calles. Creo que estoy infundiendo miedo en sus corazones. Pero en el fondo sé que no basta con ser una sombra. Gotham necesita algo que yo todavía no sé si soy capaz de ser."
+            </blockquote>
+            <p class="big-quote-author animate-fade-up">— Diario de Bruce Wayne · Año 2</p>
+        </section>
+
+        <!-- CRÍTICAS -->
+        <section class="reviews-section">
+            <div class="container">
+                <h2 class="reviews-title animate-fade-up">La Oscuridad Reinventada</h2>
+                <div class="reviews-grid">
+                    <div class="review-card animate-fade-up">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"Una obra de arte del cine de superhéroes. Oscura, poética y visceral. Pattinson redefine al personaje para siempre."</p>
+                        <p class="author">— The Guardian</p>
+                    </div>
+                    <div class="review-card animate-fade-up">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"Matt Reeves entrega el film noir más impresionante desde Chinatown. Gotham nunca se había visto tan brutal ni tan hermosa."</p>
+                        <p class="author">— IndieWire</p>
+                    </div>
+                    <div class="review-card animate-fade-up">
+                        <div class="stars">★★★★½</div>
+                        <p class="quote">"Toma al personaje en serio como detective, como símbolo y como ser humano roto. Cine de género que trasciende el género."</p>
+                        <p class="author">— Variety</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRÁILER -->
+        <section class="trailer-section">
+            <div class="trailer-bg">
+                <div class="trailer-overlay"></div>
+                <div class="trailer-content animate-fade-up">
+                    <h2 class="trailer-title">Vengeance</h2>
+                    <button class="play-btn" id="openTrailerBtn" aria-label="Reproducir Tráiler">
+                        <span class="play-icon">▶</span>
+                    </button>
+                    <p class="trailer-subtitle">Ver Tráiler Oficial</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="video-modal" id="videoModal" aria-hidden="true">
+            <button class="modal-close" id="closeTrailerBtn" aria-label="Cerrar">&times;</button>
+            <div class="modal-content">
+                <div class="iframe-container" id="iframeContainer"></div>
+            </div>
+        </div>
+
+        <!-- REPARTO -->
+        <section class="cast-section">
+            <div class="cast-header">
+                <span class="cast-label">Protagonistas</span>
+                <h2 class="section-title animate-fade-up">El Reparto</h2>
+            </div>
+            <div class="cast-grid">
+                <div class="cast-card animate-fade-up">
+                    <img src="img/galeria/robertpattinson.webp" alt="Robert Pattinson como Batman" class="cast-img"
+                         onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop';">
+                    <div class="cast-info">
+                        <h3>Robert Pattinson</h3>
+                        <p>Bruce Wayne / Batman</p>
+                    </div>
+                </div>
+                <div class="cast-card animate-fade-up">
+                    <img src="img/galeria/zoekravitz.webp" alt="Zoë Kravitz como Catwoman" class="cast-img"
+                         onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop';">
+                    <div class="cast-info">
+                        <h3>Zoë Kravitz</h3>
+                        <p>Selina Kyle / Catwoman</p>
+                    </div>
+                </div>
+                <div class="cast-card animate-fade-up">
+                    <img src="img/galeria/pauldano.webp" alt="Paul Dano como The Riddler" class="cast-img"
+                         onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop';">
+                    <div class="cast-info">
+                        <h3>Paul Dano</h3>
+                        <p>Edward Nashton / The Riddler</p>
+                    </div>
+                </div>
+                <div class="cast-card animate-fade-up">
+                    <img src="img/galeria/colinfarrell.webp" alt="Colin Farrell como The Penguin" class="cast-img"
+                         onerror="this.src='https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=400&auto=format&fit=crop';">
+                    <div class="cast-info">
+                        <h3>Colin Farrell</h3>
+                        <p>Oswald Cobblepot / The Penguin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cast-action animate-fade-up">
+                <a href="sobre.html" class="btn-secondary">Ver todos los personajes</a>
+            </div>
+        </section>
+
+    </main>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <footer class="hollywood-footer">
+        <div class="footer-inner">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/TheBatman" target="_blank">FACEBOOK</a>
+                <a href="https://www.instagram.com/thebatman" target="_blank">INSTAGRAM</a>
+                <a href="https://twitter.com/TheBatman" target="_blank">X (TWITTER)</a>
+                <a href="https://www.youtube.com/WarnerBrosPictures" target="_blank">YOUTUBE</a>
+            </div>
+            <div class="billing-row tech-row">
+                <img src="img/Dolby.png" alt="Dolby Atmos" class="footer-img">
+                <img src="img/imax.png" alt="IMAX" class="footer-img">
+            </div>
+            <div class="billing-row studio-row">
+                <img src="img/DC.png" alt="DC Studios" class="footer-img">
+                <img src="img/Warner.png" alt="Warner Bros." class="footer-img">
+                <img src="img/rated-pg13.png" alt="Rated PG-13" class="footer-img">
+            </div>
+            <nav class="footer-legal-nav">
+                <a href="#">POLÍTICA DE PRIVACIDAD</a>
+                <span class="dot">•</span>
+                <a href="#">TÉRMINOS Y CONDICIONES</a>
+                <span class="dot">•</span>
+                <a href="#">CONFIGURACIÓN DE COOKIES</a>
+            </nav>
+            <div class="footer-copyright-block">
+                <p class="main-copy">© 2026 WARNER BROS. ENTERTAINMENT INC. ALL RIGHTS RESERVED.</p>
+                <p class="disclaimer">PROYECTO EDUCATIVO DE PORTAFOLIO. NO AFILIADO CON WARNER BROS. NI DC STUDIOS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
